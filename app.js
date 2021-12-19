@@ -2,7 +2,7 @@ const {
     application
 } = require("express");
 const express = require("express");
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 if (port == null || port == "") {
     port = 3000;
 }
