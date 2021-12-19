@@ -2,7 +2,10 @@ const {
     application
 } = require("express");
 const express = require("express");
-const port = 3000;
+const port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
 const app = express();
 
 app.use(express.urlencoded({
