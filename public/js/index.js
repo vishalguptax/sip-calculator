@@ -8,11 +8,6 @@ const shareData = {
 }
 
 const btn = document.querySelector('.share');
- btn.addEventListener('click', async () => {
-     try {
-         await navigator.share(shareData)
-        console.log("App shared");
-     } catch (err) {
-         console.log(err);
-     }
- });
+btn.addEventListener('click', () => {
+    navigator.share(shareData);
+});
