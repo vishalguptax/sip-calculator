@@ -12,7 +12,9 @@
 
 body {
     background-color: #f8fafc;
+    position: relative;
 }
+
 
 nav {
     width: 100%;
@@ -92,7 +94,6 @@ form {
     justify-content: space-evenly;
     width: 100%;
     border-radius: 8px;
-    /* border-radius: 20px; */
 }
 
 input {
@@ -103,7 +104,7 @@ input {
     border-radius: 8px;
     text-align: right;
     margin-right: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #475569;
     width: 100%;
@@ -124,8 +125,8 @@ p {
     width: 50%;
     margin-right: auto;
     text-align: left;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .cal {
@@ -135,8 +136,8 @@ p {
     background-color: #4ade80;
     border: none;
     outline: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #f8fafc;
     transition: all 200ms ease;
@@ -147,8 +148,7 @@ p {
 .cal:hover {
     cursor: pointer;
     background-color: #22c55e;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .right-box {
@@ -174,15 +174,23 @@ li {
     color: #475569;
 }
 
-img {
-    width: 80px;
-    transition: all 200ms ease;
+.share {
+    color: #058FCF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.share:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-img:hover {
-    border-bottom: 2px solid #058FCF;
-    padding-bottom: 5px;
-    margin-top: -7px;
+ion-icon{
+    margin-left: 2px;
+    font-size: 1.2rem;
+    color: #ef4444;
 }
 
 .ref {
@@ -199,9 +207,30 @@ img:hover {
 h3 {
     margin-bottom: 50px;
     justify-self: flex-start;
-    color: #2563eb
+    color: #3b82f6
+
 ;
 }
+
+.images a {
+    width: 150px;
+    height: 50px;
+    transition: all 200ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images a:hover{
+    border-radius: 10px;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+img {
+    width: 70px;
+    
+}
+
 
 .images {
     display: flex;
@@ -283,6 +312,15 @@ h3 {
 
     .input label {
         width: 100% !important;
+    }
+    .images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    .images a{
+        align-self: center;
+        justify-self: center;
     }
 }
 

@@ -9,7 +9,8 @@
     <meta property="og:title" content="SIP Calculator 💸" />
     <meta property="og:description" content="Calculate your Mutual funds SIP returns very easily ☺" />
     <meta property="og:url" content="https://sipcalculator.herokuapp.com/" />
-    <meta name="description" content="SIP Calculator helps you to calculate your investment esttimated returns and to find the right amount to make your wealth.">
+    <meta name="description"
+        content="SIP Calculator helps you to calculate your investment esttimated returns and to find the right amount to make your wealth.">
     <meta property="og:image" content="https://sipcalculator.herokuapp.com/images/preview.png">
     <meta property="og:type" content="website" />
     <meta property="twitter:card" content="summary_large_image">
@@ -21,7 +22,6 @@
 </head>
 
 <body>
-
     <nav>
         <h1>SIP Calculator</h1>
         <div class="me">by <a style="color: black; font-weight: 500;" href="https://fb.com/geekyvishal"
@@ -83,25 +83,26 @@
             <div class="ref">
                 <h3>Start your SIP</h3>
                 <div class="images">
-                    <a href="https://groww.in/login" target="_blank"><img src="images/groww.png" alt="" srcset=""></a>
-                    <a href="https://login.paytmmoney.com/?returnUrl=https%3A%2F%2Fwww.paytmmoney.com%2Fmutual-funds%2Faccount%2Fdashboard"
-                        target="_blank"><img src="images/paytm.png" alt="" srcset=""></a>
-                    <a href="https://zerodha.com/open-account?c=TQ5471" target="_blank"><img src="images/zerodha.svg"
+                    <a href="https://groww.in/login" target="_blank"><img class="broker-image" src="images/groww.png"
                             alt="" srcset=""></a>
+                    <a href="https://login.paytmmoney.com/?returnUrl=https%3A%2F%2Fwww.paytmmoney.com%2Fmutual-funds%2Faccount%2Fdashboard"
+                        target="_blank"><img class="broker-image" src="images/paytm.png" alt="" srcset=""></a>
+                    <a href="https://zerodha.com/open-account?c=TQ5471" target="_blank"><img class="broker-image"
+                            src="images/zerodha.svg" alt="" srcset=""></a>
+                    <a class="share">
+                       Share this<ion-icon name="share-social-outline"></ion-icon>
+                    </a>
                 </div>
 
             </div>
         </div>
     </div>
     <footer>
-        Made with ❤️ in India
+        © 2021 SIP Calculator | Made with ❤️ in India
     </footer>
-
-    <script>
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
-    </script>
+    <script src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
