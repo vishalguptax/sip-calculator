@@ -147,7 +147,8 @@ form {
 }
 
 .useri:focus-within {
-    outline: 2px solid #4ade80;
+    outline: 1px solid #4ade80;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 input {
