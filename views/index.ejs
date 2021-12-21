@@ -12,20 +12,21 @@
     <meta name="description"
         content="SIP Calculator helps you to calculate your investment esttimated returns and to find the right amount to make your wealth.">
     <meta property="og:image" content="https://sipcalculator.herokuapp.com/images/preview.png">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <meta property="og:type" content="website" />
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="SIP Calculator for Mutual funds.">
     <meta property="twitter:account_id" content="1455794542309896193">
     <meta name="twitter:creator" content="@vishal26x" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <nav>
-        <h1><a href="#">SIP Calculator</a></h1>
-        <div class="me">by <a class="social" href="https://fb.com/geekyvishal"
-                target="_blank">Vishal</a></div>
+        <h1><a href="#">
+                <ion-icon style="color: #22C55E;" name="leaf-sharp"></ion-icon>SIP Calculator
+            </a></h1>
+        <div class="me">/ by <a class="social" href="https://fb.com/geekyvishal" target="_blank">Vishal</a></div>
     </nav>
 
     <div class="container">
@@ -37,7 +38,7 @@
                     <div class="useri">
                         <input onClick="this.select()" id="mi" name="msip" type="number" value="<%= up %>"
                             placeholder="Enter your monthly investment" required min="100">
-                        <p>/ Per month</p>
+                        <p>/ Per month </p>
                     </div>
                 </div>
                 <div class="input">
@@ -61,7 +62,7 @@
 
             </form>
         </div>
-        <div class="box right-box">
+        <div class="box right-box" id="result">
 
             <div class="result">
 
@@ -93,7 +94,8 @@
                     <a href="https://zerodha.com/open-account?c=TQ5471" target="_blank"><img class="broker-image"
                             src="https://zerodha.com/static/images/logo.svg" alt="Zerodha"></a>
                     <a class="share-btn">
-                        <button class="share">Share this<ion-icon name="share-social-outline"></ion-icon></button>
+                        <button class="share">Share this<ion-icon class="share-icon" name="share-social-outline">
+                            </ion-icon></button>
                     </a>
                 </div>
 

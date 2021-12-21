@@ -25,7 +25,6 @@ body:hover {
     cursor: default;
 }
 
-
 nav {
     width: 100%;
     height: 100px;
@@ -44,14 +43,33 @@ nav h1 a {
 }
 
 .social {
+    position: relative;
+    overflow: hidden;
     color: black;
     font-weight: 500;
-    transition: all 200ms ease;
+    transition: all 300ms ease-in;
 }
 
 .social:hover {
-    border-bottom: 1px solid;
     color: #f43f5e;
+}
+
+.social::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    visibility: hidden;
+    bottom: 0;
+    left: -100%;
+    height: 1px;
+    background-color: #22c55e;
+    transition: all 200ms ease-in;
+}
+
+.social:hover::after {
+    left: 0;
+    width: 100%;
+    visibility: visible;
 }
 
 .container {
@@ -104,7 +122,6 @@ form {
     display: flex;
     align-items: center;
     margin: 30px 0;
-
 }
 
 .input label {
@@ -116,7 +133,6 @@ form {
 }
 
 .useri {
-    margin-left: auto;
     display: flex;
     background-color: #bbf7d0;
     align-items: center;
@@ -179,7 +195,7 @@ p {
     background-color: #4ade80;
     border: none;
     outline: none;
-    border-radius: 8px;
+    border-radius: 20px;
     font-size: 1.1rem;
     font-weight: 600;
     color: #f8fafc;
@@ -190,12 +206,13 @@ p {
 
 .cal:hover {
     cursor: pointer;
-    background-color: #22c55e;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #22c55e;
 }
 
 .right-box {
-
     background-color: #dbeafe;
     padding: -40px !important;
     width: 500px;
@@ -239,7 +256,7 @@ li {
     cursor: pointer;
 }
 
-ion-icon {
+.share-icon {
     margin-left: 2px;
     font-size: 1.2rem;
     color: #f43f5e;
@@ -256,6 +273,7 @@ ion-icon {
     padding: 20px;
 }
 
+
 h3 {
     margin-bottom: 50px;
     justify-self: flex-start;
@@ -265,10 +283,29 @@ h3 {
 .images a {
     width: 150px;
     height: 50px;
+    margin: 1rem;
     transition: all 200ms ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.images a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(200px);
+    transition: all 600ms ease-in-out;
+}
+
+.images a:hover::before {
+    transform: skewX(45deg) translateX(-200px);
 }
 
 .images a:hover {
@@ -368,7 +405,6 @@ img {
     .images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
 
     .images a {
