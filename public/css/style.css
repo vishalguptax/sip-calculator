@@ -39,6 +39,21 @@ nav {
     border-bottom-right-radius: 15px;
 }
 
+nav h1 a {
+    color: black;
+}
+
+.social {
+    color: black;
+    font-weight: 500;
+    transition: all 200ms ease;
+}
+
+.social:hover {
+    border-bottom: 1px solid;
+    color: #f43f5e;
+}
+
 .container {
     margin-top: 20px;
     height: 500px;
