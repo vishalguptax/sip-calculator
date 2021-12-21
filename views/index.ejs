@@ -36,23 +36,23 @@
                     <label for="mi">Monthly investment</label>
                     <div class="useri">
                         <input onClick="this.select()" id="mi" name="msip" type="number" value="<%= up %>"
-                            placeholder="Enter investment">
+                            placeholder="Enter investment" required min="100">
                         <p>/ Per month</p>
                     </div>
                 </div>
                 <div class="input">
-                    <label for="rr">Return rate</label>
+                    <label for="rr">Expected Return rate</label>
                     <div class="useri rr">
                         <input onClick="this.select()" id="rr" name="intrest" type="number" value="<%= uIn %>"
-                            placeholder="Enter return rate (p.a.) ">
+                            placeholder="Enter return rate (p.a.)" required min="1">
                         <p>%</p>
                     </div>
                 </div>
                 <div class="input">
-                    <label for="y">Time period</label>
+                    <label for="y">Investment for</label>
                     <div class="useri">
                         <input onClick="this.select()" id="y" name="year" type="number" value="<%= uy %>"
-                            placeholder="Enter years">
+                            placeholder="Enter your investment time period." required min="1">
                         <p>Years</p>
                     </div>
                 </div>
