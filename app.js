@@ -8,6 +8,8 @@ if (port == null || port == "") {
 }
 const app = express();
 
+const app = require("https-localhost");
+
 app.use(express.urlencoded({
     extended: true
 }));
@@ -47,7 +49,6 @@ app.post("/", (req, res) => {
         uy: y
     });
 });
-
 
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
