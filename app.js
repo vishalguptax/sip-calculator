@@ -1,14 +1,7 @@
-const {
-    application
-} = require("express");
 const express = require("express");
 const port = process.env.PORT || 3000;
-if (port == null || port == "") {
-    port = 3000;
-}
-const app = express();
 
-const app = require("https-localhost");
+const app = express();
 
 app.use(express.urlencoded({
     extended: true
