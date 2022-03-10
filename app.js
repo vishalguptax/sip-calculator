@@ -3,6 +3,8 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+const date = new Date().getFullYear();
+
 app.use(express.urlencoded({
     extended: true
 }));
@@ -17,7 +19,8 @@ app.get("/", (req, res) => {
         value: "232,339",
         up: "1000",
         uIn: "12",
-        uy: "10"
+        uy: "10",
+        date: date
     });
 });
 
